@@ -1,0 +1,73 @@
+.display-flex{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between;
+    background-color: #412567;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.nav-item{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    text-align: center;
+}
+.tech{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 200px;
+}
+#nav-title{
+    color: linear-gradient(#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+}
+.nav-btn{
+    margin-right: 200px;
+    color: white;
+    font-size: 15px;
+    padding: 16px 12px;
+    border: none;
+    border-radius: 60px;
+}
+.linear{
+    background: linear-gradient(#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+}
+/* banner related styles */
+.banner{
+    background-image: url(../images/hero-bg.png);
+    max-width: 1600px;
+    height: 760px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.circle-micro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    position: relative;
+    right: -15px;
+    top: -100px;
+}
+.micro{
+    position: relative;
+    z-index: 10;
+    left: -180px;
+}
+.hero-circle{
+    position: relative;
+    z-index: 5;
+    right: -50px;
+
+}
