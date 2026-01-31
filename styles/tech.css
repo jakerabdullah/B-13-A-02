@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 .display-flex{
     display: flex;
 }
@@ -5,8 +10,8 @@
     justify-content: space-between;
     background-color: #412567;
     align-items: center;
-    max-width: 1600px;
-    margin: 0 auto;
+    /* max-width: 1600px;
+    margin: 0 auto; */
 }
 
 .nav-item{
@@ -32,7 +37,7 @@
     margin-right: 200px;
     color: white;
     font-size: 15px;
-    padding: 16px 12px;
+    padding: 10px;
     border: none;
     border-radius: 60px;
 }
@@ -42,13 +47,14 @@
 /* banner related styles */
 .banner{
     background-image: url(../images/hero-bg.png);
-    max-width: 1600px;
+    /* max-width: 1600px; */
     height: 760px;
     width: 100%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 .circle-micro{
     display: flex;
@@ -57,8 +63,8 @@
     width: 550px;
     height: 550px;
     position: relative;
-    right: -15px;
-    top: -100px;
+    right: 6px;
+    top: 45px;
 }
 .micro{
     position: relative;
@@ -70,4 +76,165 @@
     z-index: 5;
     right: -50px;
 
+}
+.light-green{
+    color: #00FF88;
+}
+.new{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #00FF88;
+    color: black;
+    padding: 3px;
+    position: relative;
+    top: -150px;
+    right: -330px;
+    z-index: 15;
+}
+.banner-title{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -10px;
+    margin-bottom: 100px;
+    
+}
+.banner-content p{
+    color: white;
+    margin-bottom: 20px;
+}
+.btn-spotify{
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.btn-sub{
+    color: #00FF88;
+    background-color: #412567;
+    border-radius: 10px;
+    border: 1px solid #00FF88;
+    padding: 5px;
+}
+/* about part styles */
+.about{
+    background-color: #1A0B2E;
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    margin-top: 0px;
+    
+}
+.about-title,.about-description{
+    color: white;
+    margin-bottom: 10px;
+}
+.about-title{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0px;
+    
+}
+.about-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    text-align: center;
+}
+.about-numbers{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 120px;
+    
+}
+.numbers p{
+    color: white;
+}
+.num-title{
+    font-weight: 600;
+    font-size: 2rem;
+}
+/* shared styles */
+.color-white{
+    color: white;
+}
+    /* choose part styles */
+.why-choose{
+    background-color: #230E3D;
+    /* max-width: 1600px;
+    margin: 0  auto; */
+    height: 100%;
+}
+.why-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    
+}
+.choose{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.cards-1{
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.cards-2,.cards-3,.cards-5{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.cards-4{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+
+.common{
+    border: 1px solid #230E3D;
+    border-radius: 20px;
+    box-shadow: 2px black;
+    background-color: #351165;
+    padding: 40px;
+}
+
+/* featured styles */
+.feature{
+    background-color: #1A0B2E;
+    /* max-width: 1600px;
+    margin: 0 auto; */
+}
+.feature-title{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.feature-card{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.common-1{
+    width: 380px;
+    height: 440px;
+    border-radius: 20px;
+    background-color: #351165;
+    padding: 5px;
 }
