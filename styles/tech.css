@@ -27,13 +27,15 @@
     text-align: center;
 }
 .tech{
-    color: white;
+    /* color: white; */
     font-size: 2rem;
     font-weight: 600;
     margin-left: 200px;
 }
-#nav-title{
-    color: linear-gradient(#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+.navt{
+    background: linear-gradient(#F7E93F 0%,#FB09B4 51%,#9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .nav-btn{
     margin-right: 200px;
@@ -84,9 +86,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 600px;
-    right: 1000px;
+    position: relative;
+    top: -220px;
+    right: -50px;
 }
 .banner-title{
     color: white;
@@ -112,9 +114,9 @@
     height: 22px;
     border-radius: 50px;
     padding: 3px;
-    position: absolute;
-    right: 1120px;
-    top: 220px;
+    position: relative;
+    right: -900px;
+    top: 160px;
     z-index: 5;
 }
 /* about part styles */
@@ -273,8 +275,8 @@
 
 }
 .foot-con{
-    position: absolute;
-    top: 2800px;
+    position: relative;
+    top: -300px;
 
 }
 .s-link-2{
