@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -13,6 +13,7 @@
      max-width: 1600px;
     margin: 0 auto; 
     width: 100%;
+    padding: 20px;
     
 }
 
@@ -74,10 +75,6 @@
     right: -5px;
 }
 
-.back-image,.hero-circle,.micro{
-    width: 100%;
-}
-
 .light-green{
     color: #00FF88;
 }
@@ -123,8 +120,11 @@
 .about{
     background-color: #1A0B2E;
     max-width: 1600px;
+    /* max-height: 646px; */
     margin: 0 auto;
     margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 60px;
     
 }
 .about-title,.about-description{
@@ -140,7 +140,7 @@
 .about-content{
     max-width: 1200px;
     margin: 0 auto;
-    
+    padding-bottom: 30px;
     text-align: center;
 }
 .about-numbers{
@@ -148,7 +148,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-top: 120px;
+    margin-top: 100px;
+    width: 100%;
     
 }
 .numbers p{
@@ -168,6 +169,8 @@
     max-width: 1600px;
     margin: 0  auto;
     height: 100%;
+    padding-top: 50px;
+    padding-bottom: 60px;
 }
 .why-title{
     text-align: center;
@@ -212,6 +215,8 @@
     background-color: #1A0B2E;
     max-width: 1600px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .feature-title{
     text-align: center;
@@ -229,16 +234,19 @@
 }
 .common-1{
     width: 380px;
-    height: 440px;
+    height: 480px;
+    border: none;
     border-radius: 20px;
     background-color: #351165;
-    padding: 5px;
+    padding: 20px;
 }
 /* host part styles */
 .host{
     background-color: #1A0B2E;
     max-width: 1600px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .host-title{
     font-size: 2.5rem;
@@ -297,3 +305,59 @@
     text-align: center;
 }
 
+/* responsive design */
+@media screen and (max-width:576px){
+    .about.about-numbers{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .choose{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature-card{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 40px;
+        gap: 30px;
+    }
+    .feature-title{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .host-content{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    .s-link{
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        
+    }
+    .host-img{
+        padding-top: 30px;
+    }
+    .foot-img{
+        max-width: 576px;
+    }
+    .foot-title{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    }
+    .s-link-2{
+        display: grid;
+        grid-template-columns: repeat(2,50px);
+        gap: 50px;
+        row-gap: 10px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+    .foot-copy{
+        font-size: 0.5rem;
+    }
+    .foot-con{
+        position: relative;
+        top: -130px;
+    }
+
+}
